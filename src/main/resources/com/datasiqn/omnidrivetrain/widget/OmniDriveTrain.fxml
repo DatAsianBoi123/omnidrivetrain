@@ -1,19 +1,22 @@
-<?import javafx.scene.layout.* ?>
-<?import javafx.scene.text.Text?>
-<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.datasiqn.omnidrivetrain.widget.OmniDriveTrainWidget" fx:id="root">
-    <HBox alignment="CENTER_LEFT">
-        <Text fx:id="leftPower"/>
-    </HBox>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.datasiqn.omnidrivetrain.widget.OmniDriveTrainWidget"
+           fx:id="root"
+           minWidth="256"
+           minHeight="256">
+    <Label fx:id="leftPower" textAlignment="CENTER" />
 
-    <HBox alignment="TOP_CENTER">
-        <Text fx:id="topPower" textAlignment="CENTER" />
-    </HBox>
+    <Label fx:id="topPower" textAlignment="CENTER" />
 
-    <HBox alignment="CENTER_RIGHT">
-        <Text fx:id="rightPower" textAlignment="RIGHT" />
-    </HBox>
+    <Label fx:id="rightPower" textAlignment="CENTER" />
 
-    <HBox alignment="BOTTOM_CENTER">
-        <Text fx:id="bottomPower" textAlignment="CENTER" />
-    </HBox>
+    <Label fx:id="bottomPower" textAlignment="CENTER" />
+
+    <Rectangle fx:id="drivetrain" fill="transparent" />
+    <Polygon fx:id="robotDirection" />
+    <Pane fx:id="robotSpeedPane" maxWidth="0" maxHeight="0" />
 </StackPane>
