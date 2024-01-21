@@ -1,0 +1,19 @@
+<?import javafx.scene.layout.* ?>
+<?import javafx.scene.text.Text?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.datasiqn.omnidrivetrain.widget.OmniDriveTrainWidget" fx:id="root">
+    <HBox alignment="CENTER_LEFT">
+        <Text fx:id="leftPower"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER">
+        <Text fx:id="topPower" textAlignment="CENTER" />
+    </HBox>
+
+    <HBox alignment="CENTER_RIGHT">
+        <Text fx:id="rightPower" textAlignment="RIGHT" />
+    </HBox>
+
+    <HBox alignment="BOTTOM_CENTER">
+        <Text fx:id="bottomPower" textAlignment="CENTER" />
+    </HBox>
+</StackPane>
